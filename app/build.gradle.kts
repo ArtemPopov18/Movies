@@ -83,7 +83,7 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata:1.5.3")
 
     // Hilt https://developer.android.com/training/dependency-injection/hilt-android
-    val hilt_version = "2.44"
+    val hilt_version = "2.48.1"
     implementation("com.google.dagger:hilt-android:$hilt_version")
     kapt("com.google.dagger:hilt-compiler:$hilt_version")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
