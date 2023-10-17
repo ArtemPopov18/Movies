@@ -56,7 +56,9 @@ fun DetailsScreens(viewModel: MainViewModel, itemId: String) {
                             text = "Genre: ",
                             fontWeight = FontWeight.Bold
                         )
-                        currentItem?.genres?.take(2)?.forEach { Text(text = " $it") }
+                        Row {
+                            currentItem?.genres?.take(currentItem.genres.size)?.forEach { Text(text = " $it") }
+                        }
                     }
                     HtmlText(
                         html = currentItem?.summary ?: "",
